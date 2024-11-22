@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import EngNotes from './components/engNotes'
 import HumNotes from './components/humNotes'
 import Footer from './components/footer'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -24,10 +25,12 @@ function App() {
     }
   ])
 
+ 
 
   return (
     <>
       <RouterProvider router={router} />
+      <Analytics />
     </>
 
 
